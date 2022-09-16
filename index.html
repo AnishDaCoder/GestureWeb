@@ -1,0 +1,72 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+
+        <h3 class="btn btn-warning heading">GESTURE WEB APP
+        <br>
+        <img src="https://cdn-icons-png.flaticon.com/512/2165/2165851.png" alt="" class="img">
+        <img src="https://media0.giphy.com/media/eIarelIdwLsn7Yzk89/giphy.gif?cid=6c09b9528d2ewapjxqp3ke4xolhu4jy89i951v0biu2fvb6p&rid=giphy.gif&ct=s" alt="" class="img">
+        <img class="img" src="https://c.tenor.com/yICKyE-jYPkAAAAC/wow-clap.gif" alt="">
+        <img class="img" src="https://c.tenor.com/d-mxCfVUGyMAAAAM/hand-emoji-victory.gif" alt="">
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJBcFM0tcnZeglOyQXYMgFFOXPkYAazDaCqqADvQ3qLApAvwjwmuUjC98zU1V5b72HITw&usqp=CAU" alt="">
+        <img class="img" src="https://i.pinimg.com/originals/78/fc/57/78fc5736273683922c0627336b5bb0cb.gif" alt="">
+      </h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take a selfie of a gesture to know what it means
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label class="title">Webcam View - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+        <br>
+        <br>
+        </div>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label class="prediction">Prediction 1 - </label>
+          <p class="emotion_name" id="result_gesture_name"></p>
+          <p class="emoji" id="update_gesture></p>
+
+           
+       
+
+        </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        
+	      <label class="title">Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check();" class="btn btn-success">Predict Emotion</button>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
